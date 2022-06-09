@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Final Project</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.6s;
+}
+
+nav {
+  width: 100%;
+  background-color: rgba(207, 204, 204, 0.432);
+  border-radius: 10px;
+  position: fixed;
+  box-shadow: 1px 1px rgba(88, 87, 87, 0.432);
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.flex-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list li {
+  display: inline-block;
+}
+.list a {
+  font-size: 20px;
+  color: black;
+  display: block;
+  padding: 7px 30px;
+}
+.list a:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.img-texts {
+  width: 1200px;
+  margin: auto;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.img-texts img {
+  margin-top: 30px;
+}
+
+.titles-middle {
+  margin-left: 20%;
+}
+.titles-middle h1 {
+  font-size: 60px;
+  color: #5a5a5a;
+}
+.titles-middle h4 {
+  font-size: 30px;
+  color: #5a5a5a;
+}
+
+.search-elements {
+  width: 1200px;
+  margin: auto;
+  max-width: 100%;
+  margin-top: 7%;
+  margin-bottom: 4%;
+}
+.search-elements ul {
+  text-align: center;
+}
+.search-elements li {
+  display: inline-block;
+}
+.search-elements a {
+  display: block;
+  padding: 17px;
+  color: black;
+}
+.search-elements a:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.content-images {
+  width: 1200px;
+  margin: auto;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.photos .second {
+  width: 100%;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+.photos .third {
+  width: 100%;
+  padding-left: 25px;
+}
+
+.bottom-photos {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small-pic {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25px;
+}
+.small-pic .fourth {
+  width: 90%;
+  height: 100%;
+}
+
+.last-pic {
+  display: flex;
+  margin-top: 25px;
+}
+.last-pic .smallest-pic img {
+  width: 90%;
+  height: 100%;
+  margin-left: 25px;
+}
+
+.load-more-button {
+  width: 1200px;
+  margin: auto;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.load-more-button a {
+  font-weight: 900;
+  color: black;
+}
+.load-more-button a:hover {
+  color: rgb(104, 101, 101);
+}
+
+.title-blog {
+  width: 1200px;
+  margin: auto;
+  max-width: 100%;
+  margin-top: 7%;
+  text-align: center;
+}
+
+.img-footer {
+  width: 1200px;
+  margin: auto;
+  max-width: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-footer .first-child {
+  width: 30%;
+}
+.img-footer .first-child h2 {
+  color: black;
+  text-align: center;
+}
+.img-footer .first-child p {
+  color: rgb(143, 140, 140);
+  text-align: center;
+}
+.img-footer .sec-child {
+  padding-left: 25px;
+  width: 30%;
+}
+.img-footer .sec-child h2 {
+  color: black;
+  text-align: center;
+}
+.img-footer .sec-child p {
+  color: rgb(143, 140, 140);
+  text-align: center;
+}
+.img-footer .third-child {
+  margin-left: 50px;
+  width: 30%;
+}
+.img-footer .third-child h2 {
+  color: black;
+  text-align: center;
+}
+.img-footer .third-child p {
+  color: rgb(143, 140, 140);
+  text-align: center;
+}
+
+.footer {
+  width: 1200px;
+  margin: auto;
+  max-width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer p {
+  color: rgb(143, 140, 140);
+}
+.footer ul {
+  margin-right: 4%;
+}
+.footer li {
+  display: inline-block;
+}
+.footer a {
+  display: block;
+  padding: 17px;
+  color: black;
+}
+.footer a:hover {
+  color: rgb(228, 225, 225);
+}
+.footer span {
+  color: black;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .content-images img {
+    width: 50%;
+  }
+  .content-images .photos {
+    width: 50%;
+  }
+}
+@media (max-width: 1100px) {
+  .img-footer {
+    width: 100%;
+  }
+  .img-footer .first-child {
+    width: 50%;
+  }
+  .img-footer .sec-child {
+    width: 50%;
+  }
+  .img-footer .third-child {
+    width: 50%;
+  }
+}
+@media (max-width: 750px) {
+  .img-footer {
+    width: 100%;
+  }
+  .img-footer .first-child {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .img-footer .sec-child {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .img-footer .third-child {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+    </style>
+</head>
+
+<body>
+    <!-- nav bar -->
+
+    <section>
+        <nav>
+            <div class="container">
+                <div class="flex-div">
+                    <img src="https://template.hasthemes.com/tm/berra/berra/img/logo/logo.png" alt="">
+                    <div class="list">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- nav-baris dabla elementebi -->
+    <section>
+
+        <div class="img-texts">
+            <img src="https://template.hasthemes.com/tm/berra/berra/img/slider/1.png" alt="bera">
+            <div class="titles-middle">
+                <h1> Hello!! I'm Bera</h1>
+                <h4>Web & Graphic Designer</h4>
+            </div>
+        </div>
+    </section>
+    <!-- axali page -->
+    <section>
+        <div class="search-elements">
+            <ul>
+                <li><a href="#">ALL</a></li>
+                <li><a href="#">Art Work</a></li>
+                <li><a href="#">Logo Design</a></li>
+                <li><a href="#">Print Design</a></li>
+                <li><a href="#">Web Design</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- photos -->
+
+    <section>
+        <div class="content-images">
+            <img src="https://template.hasthemes.com/tm/berra/berra/img/portfolio/style-1/1.jpg" alt="img">
+
+            <div class="photos">
+                <img src="https://template.hasthemes.com/tm/berra/berra/img/portfolio/style-1/2.jpg" alt="img"
+                    class="second">
+
+                <img src="https://template.hasthemes.com/tm/berra/berra/img/portfolio/style-1/3.jpg" alt="img"
+                    class="third">
+            </div>
+
+            <div class="bottom-photos">
+                <img src="https://template.hasthemes.com/tm/berra/berra/img/portfolio/style-1/5.jpg" alt="img">
+
+                <div class="small-pic">
+                    <img src="https://template.hasthemes.com/tm/berra/berra/img/portfolio/style-1/4.jpg" alt="img"
+                        class="fourth">
+                </div>
+            </div>
+
+            <div class="last-pic">
+                <img src="https://template.hasthemes.com/tm/berra/berra/img/portfolio/style-1/6.jpg" alt="#">
+
+                <div class="smallest-pic">
+                    <img src="https://template.hasthemes.com/tm/berra/berra/img/portfolio/style-1/7.jpg" alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="load-more-button">
+        <a href="#">Load More <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+
+    <section>
+        <div class="title-blog">
+            <h1>MY BLOG</h1>
+        </div>
+
+        <div class="img-footer">
+
+            <div class="first-child">
+                <img src="https://template.hasthemes.com/tm/berra/berra/img/blog/1.jpg" alt="#">
+
+                <h2>10 December 2017</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio magni eum.
+                </p>
+
+            </div>
+
+            <div class="sec-child">
+                <img src="https://template.hasthemes.com/tm/berra/berra/img/blog/2.jpg" alt="#">
+
+                <h2>10 December 2017</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio magni eum.
+                </p>
+
+            </div>
+
+
+            <div class="third-child">
+                <img src="https://template.hasthemes.com/tm/berra/berra/img/blog/3.jpg" alt="#">
+
+                <h2>10 December 2017</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio magni eum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>&copy;<span>DevItems</span>2017.All Rights Reserved.</p>
+
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Printerest</a></li>
+                <li><a href="#">Dribble</a></li>
+                <li><a href="#">Behance</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
