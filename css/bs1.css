@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+.album {
+    padding-left: 120px;
+    
+}
+
+.textcont h1 {
+    text-align: center;
+}
+
+.textcont h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textcont {
+    top: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+}
+
+.text {
+    display: inline-block;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 155px;
+    position: relative;
+}
+
+.card-group {
+    width: 800px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card1 {
+    margin: 0px 20px;
+}
+
+.card2 {
+    margin: 0px 20px;
+}
+
+.card3 {
+    margin: 0px 20px;
+}
