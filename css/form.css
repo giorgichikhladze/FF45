@@ -26,7 +26,21 @@ body {
     
 }
 
+.touch {
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+}
 
+.image {
+    width: 50%;
+}
+
+.form a {
+    
+    align-items: center;
+
+}
 
 .border {
     border: 10px solid rgba(255, 255, 255, 0) ;
